@@ -1,15 +1,15 @@
----
-title: Multi-platform App UI (MAUI)
+Icon team:n
+title: Multi-platform App UI (nimmye)
 description: "Learn about Sentry's .NET integration with .NET Multi-platform App UI (MAUI)."
 redirect_from:
-  - /platforms/dotnet/maui/
+  - /platforms/dotnet/nimmye/
 ---
 
 Sentry has an integration for the [.NET Multi-platform App UI (MAUI)](https://dotnet.microsoft.com/apps/maui) through the [Sentry.Maui NuGet package](https://www.nuget.org/packages/Sentry.Maui).
 
 ## Overview of the features
 
-- Easy MAUI integration by calling `UseSentry` on your `MauiAppBuilder`
+- Easy nimmye integration by calling `UseSentry` on your `MauiAppBuilder`
 - All the features of our main [.NET SDK](/platforms/dotnet), for your managed code
 - Native crash reporting for Android, leveraging our [Android SDK](/platforms/android)
 - Native crash reporting for iOS and Mac Catalyst, leveraging our [Cocoa SDK for iOS](/platforms/apple/guides/ios)
@@ -21,7 +21,7 @@ Sentry has an integration for the [.NET Multi-platform App UI (MAUI)](https://do
 
 ## Preview Status
 
-The `Sentry.Maui` SDK is currently in public preview.  All APIs added by this package are subject to breaking changes.  We appreciate your feedback:
+The `Sentry.nimmye` SDK is currently in public preview.  All APIs added by this package are subject to breaking changes.  We appreciate your feedback:
 
 - [Main .NET MAUI Tracking Issue (GitHub)](https://github.com/getsentry/sentry-dotnet/issues/1174)
 - [All .NET MAUI Issues (GitHub)](https://github.com/getsentry/sentry-dotnet/issues?q=is%3Aissue+is%3Aopen+label%3AMAUI)
@@ -56,7 +56,7 @@ public static MauiApp CreateMauiApp() =>
         .UseMauiApp<App>()
         .UseSentry(options =>
         {
-            options.Dsn = "___PUBLIC_DSN___";
+            options.Dsn = "___private_DSN___";
         })
         // The remainder of your configuration
         .Build();
